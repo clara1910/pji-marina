@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Formulário de Contato</title>
+  <title>Cadastro de Descarte</title>
   <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
   <div class="container">
-    <h1>Formulário de Contato</h1>
+    <h1>Cadastro do Descarte</h1>
     <form action="#">
-      <label for="nome">Nome:</label>
+      <label for="nome">Nome completo:</label>
       <input type="text" id="nome" name="nome" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <p>Qual sua turma?</p>
+      <div class="opcao" data-radio-id="redes">
+        <input type="radio" id="redes" name="turma" value="redes" required>
+        <label for="redes">Redes de Computadores</label>
+      </div>
+      <div class="opcao" data-radio-id="logistica">
+        <input type="radio" id="logistica" name="turma" value="logistica">
+        <label for="logistica">Logística</label>
+      </div>
+      <div class="opcao" data-radio-id="servidores">
+        <input type="radio" id="servidores" name="turma" value="servidores">
+        <label for="servidores">Servidores</label>
+      </div>
+      <br>
 
-      <label for="mensagem">Mensagem:</label>
+      <label for="mensagem">O que você está descartando?</label>
       <textarea id="mensagem" name="mensagem" required></textarea>
+
+
 
       <button type="submit">Enviar</button>
     </form>
   </div>
 
-  <script src="script.js"></script> </body>
 </html>

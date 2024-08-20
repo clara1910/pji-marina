@@ -1,6 +1,6 @@
 
 body {
-  font-family: Arial, sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 0;
   padding: 0;
   background-color: #d6ffdb;
@@ -34,6 +34,7 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="ponto"],
 textarea {
   width: 100%;
   padding: 10px;
@@ -61,3 +62,19 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #d6ffdb; /* Azul mais escuro */
 }
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ccc; /* Cor da bolinha não selecionada */
+  border: 2px solid #ccc; /* Borda da bolinha */
+  margin-right: 10px;
+  cursor: pointer; /* Define o cursor como ponteiro */
+  -webkit-appearance: none; /* Remove o estilo padrão do botão */
+  appearance: none; /* Remove o estilo padrão do botão */
+}
+input[type="radio"]:checked {
+  /* Estilos da bolinha selecionada */
+  background-color: #007bff; /* Cor da bolinha selecionada */
+  border: 2px solid #007bff; /* Borda da bolinha */

@@ -40,15 +40,25 @@ section {
 }
 
 .feature {
-  width: 200px;
+  display: block; 
+  width: 40%; 
+  padding: 10px; 
+  margin-bottom: 5px;
   margin: 10px;
-  padding: 20px;
   background-color: #71a96a;
   border-radius: 5px;
-  text-align: center;
   text-decoration: none;
+  text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
+
+
+.feature a button { /* Estilo para o botão dentro do link */
+  text-decoration: none; /* Remove o sublinhado */
+  color: #000; /* Define a cor do texto */
+}
+
 a{
   text-decoration: none;
   color: #2f2d2d;
@@ -56,8 +66,8 @@ a{
 
 
 .feature img {
-  width: 80px;
-  margin-bottom: 10px;
+  width: 40px;
+  margin-top: 15px;
 }
 
 .access ul {
@@ -71,7 +81,7 @@ a{
 
 .access a {
   text-decoration: none;
-  color: #007bff; /* Azul claro */
+  color: #000000; 
   font-weight: bold;
 }
 
